@@ -40,15 +40,15 @@ fine for policy pages — but never put anything secret in here.
 Everything still to be filled in is marked in the pages themselves with a
 yellow highlight. Search for `class="todo"`:
 
-- **The prices** on `/partybook/pricing/`. They come from the plan, not from a
-  live price list, and a customer will hold you to them.
-- **The refund timings** on `/refund-policy/`. The 3-working-day figure is a
-  promise.
 - **Water Sort** on the home page needs a link, and its own privacy policy
   before it is published.
 
 **Settled, so nobody has to wonder again:**
 
+- **Prices** are confirmed: Rs.99 Limited and Rs.199 Unlimited, per branch
+  per month, and a refund is started within 7 working days. Both are
+  published promises now, so change them in the pages rather than only in
+  BILLING_PLAN.md.
 - The **Grievance Officer** is Sarankumar R, named on `/contact/` and in
   section 10 of the privacy policy. India's SPDI Rules 2011 want a named
   person rather than a role, which is why it is a name and not "the
