@@ -45,10 +45,14 @@ yellow highlight. Search for `class="todo"`:
 
 **Settled, so nobody has to wonder again:**
 
-- **Prices** are confirmed: Rs.99 Limited and Rs.199 Unlimited, per branch
-  per month, and a refund is started within 7 working days. Both are
-  published promises now, so change them in the pages rather than only in
-  BILLING_PLAN.md.
+- **The price** is Rs.999 per branch per year, described on the pricing page as
+  introductory so raising it later is a plan that was announced rather than a
+  surprise. There are no tiers and no order cap: BILLING_PLAN.md has the
+  argument, but the short version is that a soft cap cannot be enforced on an
+  annual cycle without a payment mandate, and the machinery would have been
+  protecting about ninety rupees a year. A refund is started within 7 working
+  days. All of these are published promises, so a change has to be made in the
+  pages and not only in the plan.
 - The **Grievance Officer** is Sarankumar R, named on `/contact/` and in
   section 10 of the privacy policy. India's SPDI Rules 2011 want a named
   person rather than a role, which is why it is a name and not "the
