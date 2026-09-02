@@ -1,4 +1,4 @@
-# devrocks.github.io
+# devrocksapps.github.io
 
 The DevRocks site: what the business is, what PartyBook is, and the policy
 pages a payment gateway and the Play Store both require.
@@ -25,12 +25,12 @@ git init
 git add -A
 git commit -m "The DevRocks site"
 git branch -M main
-git remote add origin https://github.com/devrocks/devrocks.github.io.git
+git remote add origin https://github.com/devrocksapps/devrocksapps.github.io.git
 git push -u origin main
 ```
 
 Then **Settings → Pages → Source: deploy from branch `main`, folder `/`**.
-Live at `https://devrocks.github.io/` within a couple of minutes, with HTTPS.
+Live at `https://devrocksapps.github.io/` within a couple of minutes, with HTTPS.
 
 The repository has to be **public** for GitHub Pages on the free plan. That is
 fine for policy pages — but never put anything secret in here.
