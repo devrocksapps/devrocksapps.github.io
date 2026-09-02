@@ -40,8 +40,6 @@ fine for policy pages — but never put anything secret in here.
 Everything still to be filled in is marked in the pages themselves with a
 yellow highlight. Search for `class="todo"`:
 
-- **City and state**, on `/contact/` and in the governing-law clause of
-  `/terms/`.
 - **The prices** on `/partybook/pricing/`. They come from the plan, not from a
   live price list, and a customer will hold you to them.
 - **The refund timings** on `/refund-policy/`. The 3-working-day figure is a
@@ -49,8 +47,18 @@ yellow highlight. Search for `class="todo"`:
 - **Water Sort** on the home page needs a link, and its own privacy policy
   before it is published.
 
-A full postal address is deliberately absent. Razorpay may ask for one during
-review; add it to `/contact/` then rather than up front.
+**Settled, so nobody has to wonder again:**
+
+- The **Grievance Officer** is Sarankumar R, named on `/contact/` and in
+  section 10 of the privacy policy. India's SPDI Rules 2011 want a named
+  person rather than a role, which is why it is a name and not "the
+  proprietor".
+- **No postal address and no phone number**, deliberately. The Consumer
+  Protection (E-commerce) Rules 2020 are generally read as expecting both from
+  an online seller, and Razorpay may ask during review — add them to
+  `/contact/` if asked, rather than up front. The governing-law clause says
+  "the courts of India" for the same reason: naming one court needs an address
+  to match it.
 
 ## Structure
 
