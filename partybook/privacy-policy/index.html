@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PartyBook privacy policy</title>
+<meta name="description" content="What PartyBook stores, where it is stored, and who can see it.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">DevRocks</a>
+    <nav>
+      <a href="/partybook/">PartyBook</a>
+      <a href="/partybook/pricing/">Pricing</a>
+      <a href="/partybook/privacy-policy/">Privacy</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>PartyBook privacy policy</h1>
+  <p class="tagline">
+    What the app stores, where it is stored, and who can see it.
+  </p>
+  <p class="updated">Last updated 2 September 2026</p>
+
+  <p>
+    PartyBook is made by <strong>DevRocks</strong>, a sole proprietorship in
+    India. Questions about anything on this page go to
+    <a href="mailto:partybook.support@gmail.com">partybook.support@gmail.com</a>.
+  </p>
+
+  <h2>Two different people are involved</h2>
+  <p>
+    That distinction runs through everything below, so it is worth stating
+    first.
+  </p>
+  <ul>
+    <li>
+      <strong>The business using PartyBook</strong> — a hotel or caterer, and
+      its staff, who hold accounts we issued.
+    </li>
+    <li>
+      <strong>That business's own customers</strong> — the people whose names,
+      phone numbers and delivery addresses staff type into an order. These
+      people have no account and never use the app.
+    </li>
+  </ul>
+  <p>
+    For the second group, <strong>the business decides what is collected and
+    why; we only hold it for them.</strong> If you are one of a shop's
+    customers and want your details corrected or removed, ask the shop — they
+    control that record. We will help them do it, but we will not change
+    another business's records on a third party's instruction.
+  </p>
+
+  <h2>What is stored</h2>
+
+  <dl>
+    <dt>About the business</dt>
+    <dd>
+      Hotel name, its hotel code, and optionally an address and phone number.
+      Per branch: name, address, phone number and bill-number prefix.
+    </dd>
+
+    <dt>About staff</dt>
+    <dd>
+      A username, a display name, a role (administrator or labour), and whether
+      the account is active. Optionally a list of employee names, so an order
+      can record who took it.
+    </dd>
+
+    <dt>About the menu</dt>
+    <dd>Food item names and rates.</dd>
+
+    <dt>About each order</dt>
+    <dd>
+      The customer's name, phone number, an optional second phone number and a
+      delivery address. The items and quantities, rates and total, the delivery
+      date and sitting, when it was booked and by which account, amounts paid
+      and how, and — if cancelled — who cancelled it, when, why and any refund.
+    </dd>
+  </dl>
+
+  <div class="note">
+    <p>
+      <strong>PINs are not stored.</strong> A six-digit PIN never reaches our
+      records in a readable form. What is stored is a value derived from it
+      using PBKDF2 with a per-account salt and 100,000 rounds, which is
+      one-way: nobody, including us, can read a PIN back out of it. That is why
+      a forgotten PIN is <em>replaced</em> rather than recovered.
+    </p>
+    <p>
+      The branch cancellation code is stored the same way for staff to check
+      against, alongside a copy that only that hotel's own administrators can
+      read — so the owner can tell their staff what it is.
+    </p>
+  </div>
+
+  <h2>Where it is stored</h2>
+  <p>
+    On Google Firebase — Firestore for records, Firebase Authentication for
+    sign-in credentials, and Cloud Functions for the one operation the app is
+    not permitted to do itself.
+  </p>
+  <p>
+    <strong>The database and those functions are hosted in Google's
+    <code>asia-south1</code> region, in Mumbai, India.</strong> Your records do
+    not leave the country in normal operation.
+  </p>
+
+  <h3>And on the phone</h3>
+  <p>
+    The app keeps an offline copy of the records it has seen, so it works
+    without a signal, plus a stored sign-in session. Both live in the app's
+    private storage.
+  </p>
+  <p>
+    On Android, <strong>we switch off Google's app backup and
+    device-to-device transfer</strong> for PartyBook. That is deliberate: the
+    offline copy holds customers' names, numbers and addresses, and we would
+    rather it never be copied off the phone by the operating system. Removing
+    the app removes it.
+  </p>
+
+  <h2>Who it is shared with</h2>
+  <p>
+    <strong>Nobody.</strong> We do not sell, rent or share your records, and we
+    do not use them to build profiles or train anything.
+  </p>
+  <p>
+    There is no analytics in PartyBook. No advertising, no tracking, no
+    crash-reporting service, no third-party SDK beyond what is listed here. The
+    app does not know how you use it.
+  </p>
+  <table>
+    <tr>
+      <th>Who</th>
+      <th>What they process</th>
+      <th>Why</th>
+    </tr>
+    <tr>
+      <td>Google (Firebase)</td>
+      <td>Everything under “What is stored”</td>
+      <td>They host it. We are their customer.</td>
+    </tr>
+    <tr>
+      <td>Razorpay</td>
+      <td>
+        Only a subscription payment: the payer's own details, and the amount
+      </td>
+      <td>
+        Collecting the monthly fee. Razorpay never sees any order, customer or
+        staff record.
+      </td>
+    </tr>
+  </table>
+
+  <h2>Things the app does that look like sharing, and are not</h2>
+  <ul>
+    <li>
+      <strong>The Call button</strong> on a pending payment opens your phone's
+      own dialler with the customer's number filled in. It does not place a
+      call, and the number goes nowhere but your dialler.
+    </li>
+    <li>
+      <strong>Printing or sharing a bill</strong> creates a PDF on your phone.
+      Where it then goes — a printer, WhatsApp, email — is your choice, and
+      after that it is outside PartyBook.
+    </li>
+    <li>
+      <strong>The request forms</strong> for a hotel account or a PIN reset
+      open your own email app with the details filled in. Nothing is sent until
+      you press send in that app.
+    </li>
+  </ul>
+
+  <h2>How long it is kept</h2>
+  <p>
+    For as long as the business wants it. Order history is the point of the
+    product, and a cancelled order is deliberately kept rather than deleted so
+    the record survives with its bill number intact.
+  </p>
+  <p>
+    We take daily backups of the database and keep them for seven days, so an
+    accidental deletion can be undone.
+  </p>
+  <p>
+    A business can ask us to delete its hotel and everything in it, by emailing
+    <a href="mailto:partybook.support@gmail.com">partybook.support@gmail.com</a>
+    from an administrator. We will confirm before doing it, because it cannot be
+    undone once the backups age out.
+  </p>
+
+  <h2>Security, stated plainly</h2>
+  <ul>
+    <li>
+      Records are readable only by accounts belonging to that hotel, enforced on
+      the server and not only in the app.
+    </li>
+    <li>
+      PINs and cancellation codes are stored one-way, as described above.
+    </li>
+    <li>
+      The app carries no administrative key. Changing another person's
+      credential happens on a server, only for an administrator of that same
+      hotel, and never for a hotel's only administrator.
+    </li>
+    <li>
+      <strong>What we do not claim:</strong> a PIN is six digits, and a phone
+      left unlocked on a counter is a phone anybody can pick up. PartyBook is
+      built for a shared counter handset, and its sign-in reflects that. Treat
+      the phone as the key.
+    </li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>
+    PartyBook is business software, not intended for or directed at children,
+    and accounts are issued to businesses rather than to individuals who sign
+    themselves up.
+  </p>
+
+  <h2>Your requests</h2>
+  <p>
+    A business using PartyBook can ask us for a copy of its records, a
+    correction, or deletion of its hotel. Email
+    <a href="mailto:partybook.support@gmail.com">partybook.support@gmail.com</a>
+    from an administrator's address and we will reply within a reasonable time.
+  </p>
+  <p>
+    If you are a customer of a shop that uses PartyBook, ask the shop — see the
+    first section.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If it changes in a way that matters, we will change the date at the top and
+    tell the businesses using PartyBook by email.
+  </p>
+</main>
+
+<footer class="site">
+  <div>
+    DevRocks &middot;
+    <a href="mailto:partybook.support@gmail.com">partybook.support@gmail.com</a><br>
+    <a href="/terms/">Terms of Service</a> &middot;
+    <a href="/refund-policy/">Refund &amp; Cancellation Policy</a> &middot;
+    <a href="/partybook/privacy-policy/">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
