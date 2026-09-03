@@ -201,7 +201,11 @@ footer.site div {
 
 footer.site a { color: var(--forest-soft); }
 
-/* Anything still to be filled in before publishing. Deliberately loud. */
+/* Anything still to be filled in. Deliberately loud, and nothing uses it.
+   Every past use reached the live site, which is the failure it was meant to
+   prevent -- a marker only works if somebody is checking for it, and the site
+   publishes on push with nobody in between. Grep for `class="todo"` before a
+   push if you use it; better, do not put the placeholder up at all. */
 .todo {
   background: #fff3cd;
   border-bottom: 2px dotted #c8862a;
