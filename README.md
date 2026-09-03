@@ -59,10 +59,20 @@ yellow highlight. Search for `class="todo"`:
   proprietor".
 - **No postal address and no phone number**, deliberately. The Consumer
   Protection (E-commerce) Rules 2020 are generally read as expecting both from
-  an online seller, and Razorpay may ask during review — add them to
+  an online seller, and a gateway may ask during review — add them to
   `/contact/` if asked, rather than up front. The governing-law clause says
   "the courts of India" for the same reason: naming one court needs an address
   to match it.
+
+  **A note saying all of that used to appear on `/contact/` itself, and was
+  removed on 3 September 2026 at the vendor's request.** It was written as a
+  reminder to the vendor and it was on the wrong side of the screen: a
+  customer reading it learns only that the seller is unsure whether their own
+  page is compliant, which reads worse than the omission it was explaining.
+  Razorpay's KYC review then passed with the address absent and never asked.
+  The open question is unchanged and is recorded here and in
+  `SaiBrindhavanApp/PLAY_LISTING.md` — where the vendor will see it and a
+  customer will not.
 
 ## Structure
 
