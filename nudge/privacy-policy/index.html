@@ -65,7 +65,13 @@
       delivered. You and your partner can both see it in History.</dd>
     <dt>Rate-limit counters</dt>
     <dd>The times of your recent nudges and pairing attempts, kept for at most
-      an hour, to stop nudges being sent too often.</dd>
+      an hour, to stop nudges being sent too often and pairing codes being
+      guessed. Pairing attempts are also counted per network, using a one-way
+      hash of your IP address; the address itself is never stored.</dd>
+    <dt>App integrity check</dt>
+    <dd>Nudge uses Firebase App Check with Google Play Integrity to confirm
+      requests come from the genuine app, which protects your link from scripts
+      and modified apps. Google processes this check as our service provider.</dd>
   </dl>
   <p>
     This data is used only to make Nudge work. It is not sold, and it is not
