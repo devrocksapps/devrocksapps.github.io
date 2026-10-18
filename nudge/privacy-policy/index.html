@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nudge privacy policy</title>
+<meta name="description" content="What Nudge collects to deliver nudges between two linked phones, what its ads collect, and how to delete it all.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/">DevRocks</a>
+    <nav>
+      <a href="/nudge/">Nudge</a>
+      <a href="/nudge/privacy-policy/">Privacy</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Nudge privacy policy</h1>
+  <p class="tagline">
+    The short version: Nudge keeps only what it needs to deliver a buzz from
+    your phone to your partner's: a first name, your settings and a short
+    history. No email, no phone number, no contacts, no location. The free
+    version shows ads from Google AdMob.
+  </p>
+  <p class="updated">Last updated 18 October 2026</p>
+
+  <p>
+    Nudge is an Android app made by <strong>DevRocks</strong>, a sole
+    proprietorship in India. It lets two people link their phones so either
+    one can make the other's phone vibrate. Questions about this page go to
+    <a href="mailto:partybook.support@gmail.com">partybook.support@gmail.com</a>.
+  </p>
+
+  <h2>1. What Nudge stores, and why</h2>
+  <p>
+    Nudge uses Google Firebase (Authentication, Cloud Firestore, Cloud
+    Functions and Cloud Messaging) to run. Data is stored on Google's servers
+    in Mumbai, India, and is encrypted in transit.
+  </p>
+  <dl>
+    <dt>An anonymous account</dt>
+    <dd>When you first open Nudge it creates an anonymous Firebase account: a
+      random ID tied to this install. You never give an email address,
+      phone number or password.</dd>
+    <dt>Your display name</dt>
+    <dd>The name you type during setup, shown to the person you link with.</dd>
+    <dt>A push token and your time zone</dt>
+    <dd>Firebase Cloud Messaging gives your phone a token so nudges can reach
+      it. Your time zone (for example "Asia/Kolkata") is used only to apply
+      your quiet hours at the right local time.</dd>
+    <dt>Your settings</dt>
+    <dd>Whether nudges may get through silent mode, and your quiet hours.</dd>
+    <dt>Your link</dt>
+    <dd>Who you are linked with, both display names, and when the link
+      started and ended. Pairing codes expire after 10 minutes.</dd>
+    <dt>Nudge history</dt>
+    <dd>For each nudge: who sent it, who received it, the pattern ("Thinking
+      of you", "Call me" or "Urgent"), when it was sent and whether it was
+      delivered. You and your partner can both see it in History.</dd>
+    <dt>Rate-limit counters</dt>
+    <dd>The times of your recent nudges and pairing attempts, kept for at most
+      an hour, to stop nudges being sent too often.</dd>
+  </dl>
+  <p>
+    This data is used only to make Nudge work. It is not sold, and it is not
+    used for advertising.
+  </p>
+
+  <h2>2. Ads</h2>
+  <p>
+    Nudge shows ads from <strong>Google AdMob</strong> on the History and
+    Settings screens. Ads never cover the Nudge button or an incoming nudge.
+    To show and measure ads, the Google Mobile Ads SDK collects your device's
+    advertising ID, approximate location derived from your IP address,
+    and information about ad interactions and app performance (for example
+    crashes). Google handles this data under its own policy:
+    <a href="https://policies.google.com/technologies/partner-sites">How Google
+    uses information from sites or apps that use its services</a>.
+  </p>
+  <p>
+    If you are in the European Economic Area, the UK or Switzerland, Nudge
+    asks for your consent first, and you can change your choice any time in
+    <strong>Settings → Ad privacy choices</strong>. Anywhere, you can reset
+    or delete your advertising ID in your phone's settings
+    (Settings → Privacy → Ads, or Google → Ads).
+  </p>
+
+  <h2>3. Permissions</h2>
+  <dl>
+    <dt>Notifications</dt>
+    <dd>To show who nudged you.</dd>
+    <dt>Vibration</dt>
+    <dd>To play the nudge. If you choose to let nudges through silent mode,
+      Nudge plays the vibration as an alarm so it is felt even when the phone
+      is on silent.</dd>
+    <dt>Do Not Disturb access (optional)</dt>
+    <dd>Lets a nudge's notification show during Do Not Disturb. Nudge never
+      changes your Do Not Disturb settings.</dd>
+    <dt>Full-screen alerts (optional)</dt>
+    <dd>Lets an Urgent nudge light up the screen like an alarm.</dd>
+    <dt>Camera, only through Google's code scanner</dt>
+    <dd>Scanning a pairing QR code uses Google Play services' scanner. Nudge
+      itself never gets camera access or sees the camera image.</dd>
+  </dl>
+
+  <h2>4. Who can see your data</h2>
+  <p>
+    Only the person you link with sees your display name and your shared
+    nudge history. Firestore security rules stop anyone else's app from
+    reading it. Google processes the data as our service provider (Firebase)
+    and, for ads, as described in section 2.
+  </p>
+
+  <h2>5. Keeping and deleting your data</h2>
+  <p>
+    Your data is kept while you use Nudge. To delete everything, open
+    <strong>Settings → Delete my data</strong>: this unlinks you, deletes your
+    name, settings, links and nudge history (including the nudges you shared
+    with your partner) and your anonymous account, straight away.
+  </p>
+  <p>
+    If you have already uninstalled Nudge, write to
+    <a href="mailto:partybook.support@gmail.com">partybook.support@gmail.com</a>
+    with the display name you used and roughly when, and we will delete the
+    matching data within 30 days.
+  </p>
+
+  <h2>6. Children</h2>
+  <p>
+    Nudge is not meant for children under 13, and we do not knowingly collect
+    data from them. If you believe a child has used Nudge, write to us and we
+    will delete the data.
+  </p>
+
+  <h2>7. Grievances</h2>
+  <p>
+    Complaints and questions about privacy go to the Grievance Officer,
+    <strong>Sarankumar R, DevRocks</strong>, at
+    <a href="mailto:partybook.support@gmail.com">partybook.support@gmail.com</a>.
+    We reply within 7 days. See <a href="/contact/">Contact</a>.
+  </p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>
+    If a future version of Nudge changes any of the above, this page will be
+    updated before that version is released, with a new date at the top.
+  </p>
+</main>
+
+<footer class="site">
+  <div>
+    DevRocks &middot;
+    <a href="mailto:partybook.support@gmail.com">partybook.support@gmail.com</a><br>
+    <a href="/nudge/">Nudge</a> &middot;
+    <a href="/contact/">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

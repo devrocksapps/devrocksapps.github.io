@@ -86,6 +86,8 @@ yellow highlight. Search for `class="todo"`:
 /partybook/privacy-policy/        <- the URL the Play Store listing needs
 /echo/                            the game
 /echo/privacy-policy/             <- the URL Echo's Play Store listing needs
+/nudge/                           the buzz-your-partner app
+/nudge/privacy-policy/            <- the URL Nudge's Play Store listing needs
 ```
 
 A folder per app, so the next one is `/watersort/privacy-policy/` and the
